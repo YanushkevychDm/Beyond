@@ -1,0 +1,10 @@
+.pricing {
+  background-color: #fff;
+  padding: $padding 0;
+} 
+
+@media only screen and (max-width: 800px) {
+  .pricing {
+    padding: $padding-min 0;
+  }
+}

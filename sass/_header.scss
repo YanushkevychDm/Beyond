@@ -1,0 +1,197 @@
+.header {
+  background-color: rgb( 255, 173, 42 );
+  background-image: -moz-linear-gradient( -50deg, rgb( 255, 173, 42 ) 0%, rgb( 246, 146, 60 ) 30.249%, rgb( 235, 109, 84 ) 60.498%, rgb( 227, 87, 100 ) 100%);
+  background-image: -webkit-linear-gradient( -50deg, rgb( 255, 173, 42 ) 0%, rgb( 246, 146, 60 ) 30.249%, rgb( 235, 109, 84 ) 60.498%, rgb( 227, 87, 100 ) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 0% 100%);
+
+  &__h1 {
+    font-size: 17rem;
+    font-family: 'Montserrat', sans-serif;
+    color: $color-light1;
+    text-transform: uppercase;
+    line-height: 17rem;
+    margin: 18rem 0 0;
+    text-shadow:  -12.124px -7px 17px rgba( 0, 0, 0, 0.2 );
+    transform: rotateZ(-3.3deg);
+    text-align: left;
+    width: 77rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.logo {
+  position: relative;
+
+  &__text {
+    width: 9.6rem;
+    height: 9.6rem;
+    margin: 0 auto 7rem;
+    background-color: #fff;
+    font-size: 4.4rem;
+    color: $color1;  
+    font-weight: 500;
+    text-align: center;
+    line-height: 8rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 0% 100%);
+  }
+  &__shadow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 9.6rem;
+    height: 9.6rem;
+    background-color: transparent;
+    box-shadow: -5px -4px 4px rgba( 0, 0, 0 , 0.2);
+  }
+}
+
+.nav {
+  max-width: 970px;
+  margin: 0 auto 14.5rem;
+  text-transform: uppercase;
+
+  &__ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    color: $color-light1;
+  }
+
+  &__a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.hero {
+  width: 57rem;
+  margin: 0 auto;
+  margin-bottom: 5.5rem;
+  color: $color-light1;
+  text-align: center;
+  text-transform: uppercase;
+
+  &__h2 {
+    margin: 0;
+    font-size: 6.75rem;
+    // line-height: 4.455;
+    font-weight: 400;
+    line-height: 6.75rem;
+  }
+    
+  &__h2--min {
+    margin: 0;
+    font-size: 4.18rem;
+    // line-height: 4.455;
+    font-weight: 400;
+    line-height: 4.18rem;
+  }
+
+}
+
+
+.dots {
+  list-style: none;
+  position: absolute;
+  right: 30px;
+  top: 44.6rem;
+  
+
+  &__li {
+    width: 17px;
+    height: 17px;
+    background-color: rgba(255, 255,255, .6);
+    border-radius: 50%; 
+  }
+
+  &__li:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  &__li.active {
+    background-color: rgba(255, 255,255, 1);
+  }
+
+  &__li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .header__h1 {
+    font-size: 14rem;
+    line-height: 14rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transform: rotateZ(0);
+  }
+
+  .secret {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header__h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+
+  .dots {
+    list-style: none;
+    position: absolute;
+    right: 30px;
+    top: 24.6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dots {
+    display: none;
+  }
+
+  .header__h1 {
+    margin: 10rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 5.5rem;
+  
+    &__h2 {
+      margin: 0;
+      font-size: 5.05rem;
+      font-weight: 400;
+      line-height: 5.05rem;
+    }
+      
+    &__h2--min {
+      margin: 0;
+      font-size: 3.1rem;
+      font-weight: 400;
+      line-height: 3.1rem;
+    }
+  
+  }
+}
+

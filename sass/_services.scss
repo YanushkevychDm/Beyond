@@ -1,0 +1,77 @@
+.services {
+  background-color: $bg-dark1;
+  // height: 108rem;
+  padding: $padding 0;
+}
+
+.dishes {
+  display: flex;
+  
+}
+.drinks {
+  margin-right: 30rem;
+}
+
+
+
+.card-1 {
+  display: flex;
+
+  &__img {
+    color: $color-light1;
+    font-size: 50px;
+    margin-right: 3rem;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;;
+    font-size: 2.2rem;
+    color: $color-light1;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    color: $color-light1;
+    line-height: 1.535;
+  }
+}
+
+.card-1:not(:last-child) {
+  margin-bottom: 7.8rem;
+}
+
+@media only screen and (max-width: 1700px) {
+  .dishes {
+    display: flex;
+    justify-content: space-around;
+  }
+  .drinks {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .dishes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // width: 80rem;
+  }
+  .drinks {
+    margin-right: 0;
+    margin-bottom: 7.8rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .services {
+    padding: $padding-min 0;
+  }
+}

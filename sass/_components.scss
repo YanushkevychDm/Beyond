@@ -1,0 +1,21 @@
+.btn {
+  background-color: $bg-light2;
+  color: $color2;
+  width: 20.6rem;
+  height: 5.6rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 2.2rem;
+  // text-transform: none;
+  line-height: 5.6rem;
+  cursor: pointer;
+
+  &--dark {
+    background-color: $bg-dark2;
+    color: $color-light1;
+    border: none;
+  }
+}
+

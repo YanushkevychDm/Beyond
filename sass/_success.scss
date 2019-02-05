@@ -1,0 +1,134 @@
+.success-story {
+  padding-bottom: $padding;
+}
+
+.success {
+
+  &__p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+} 
+
+.secret {
+  width: 27rem;
+  text-transform: uppercase;
+  
+  display: inline-block;
+
+  &__1 {
+    font-size: 13.4rem;
+    line-height:  13.4rem;
+    font-weight: 500;
+    color: $color1;
+  }
+
+  &__2 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    color: $color1;
+  }
+
+  &__3 {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    color: $color-peach;
+    font-weight: 600;
+  }
+
+}
+
+.success-img {
+  
+  width: 33.6rem;
+  height: 22.8rem;
+  display: inline-block;
+  padding: 1.3rem;
+  border: 4px solid $color-peach;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.parallax-big {
+  position: absolute;
+  right: -25.6rem;
+  top: -15rem;
+  width: 62.8rem;
+  height: 62.1rem;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.parallax-small {
+  position: absolute;
+  left: -25.6rem;
+  bottom: -41rem;
+  width: 37rem;
+  height: 36.6rem;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1700px) {
+  .parallax-big {
+    position: absolute;
+    right: 0;
+    top: -15rem;
+    width: 30rem;
+    height: 30rem;
+  
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .parallax-small {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1170px) {
+  .parallax-big {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .success-story {
+    padding-bottom: $padding-min;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dots {
+    display: none;
+  }
+
+  .secret {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .success {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+}
+
+
