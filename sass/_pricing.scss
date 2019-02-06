@@ -1,7 +1,130 @@
 .pricing {
-  background-color: #fff;
+  // background-color: #fff;
+  background-color: $color-light1;
   padding: $padding 0;
 } 
+
+// .multiple-items {
+//   max-width: 100rem;
+//   margin: 0 auto;
+// }
+
+.card6 {
+  box-sizing: border-box;
+  background-color: $bg-light3;
+  // padding: 4rem 0 2.8rem;
+  max-width: 27rem;
+  border-radius: 1rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+
+  .card6-head {
+    color: $color1;
+    padding-top: 4rem;
+
+    &__h4 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0 0 3rem;
+    }
+
+    &__h4::after {
+      content: "";
+      width: 3rem;
+      height: 1.5rem;
+      border-bottom: 1px solid $color1;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    &__price {
+      // font-family: 'Raleway', sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+ 
+    }
+  }
+
+  .card6-body {
+    list-style: none;
+    color: $color1;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0 4rem;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 4.5rem;
+
+    &__li {
+      padding-bottom: 1rem;
+    }
+
+    &__li:first-of-type {
+      padding-bottom: 4rem;
+      text-align: center;
+    }
+  }
+
+  .card6-order {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 14.2rem;
+    height: 4rem;
+    background-color: $color-light1;
+    border-radius: 4rem;
+    line-height: 4rem;
+    color: $color1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
+.multiple-items{
+  max-width: 95rem;
+  margin: 0 auto;
+
+  .slick-prev, .slick-next {
+    width: 5rem;
+    height: 10rem;
+  }
+
+  .slick-prev {
+    left: -5rem;
+    // color: red;
+  }
+
+  .slick-next {
+    right: -5rem;
+  }
+
+  .slick-prev::before, .slick-next::before {
+    font-family: 'slick';
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: $bg-dark2;
+    background-color: transparent;
+
+  }
+
+  .slick-prev::before {
+    content: "<i class="fas fa-chevron-left"></i>";
+    
+  }
+
+  .slick-next::before {
+    content: "<i class="fas fa-chevron-right"></i>";
+  }
+
+  .slick-dots {
+    bottom: -5rem;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   .pricing {
