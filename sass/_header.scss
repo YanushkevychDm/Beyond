@@ -22,10 +22,11 @@
 .logo {
   position: relative;
 
+
   &__text {
     width: 9.6rem;
     height: 9.6rem;
-    margin: 0 auto 7rem;
+    margin: 0 auto;
     background-color: #fff;
     font-size: 4.4rem;
     color: $color1;  
@@ -46,32 +47,13 @@
   }
 }
 
-.nav {
-  max-width: 970px;
-  margin: 0 auto 14.5rem;
-  text-transform: uppercase;
 
-  &__ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 1.6rem;
-    color: $color-light1;
-  }
 
-  &__a {
-    text-decoration: none;
-    color: inherit;
-  }
-}
+
 
 .hero {
   width: 57rem;
-  margin: 0 auto;
-  margin-bottom: 5.5rem;
+  margin: 22.8rem auto 5.5rem;
   color: $color-light1;
   text-align: center;
   text-transform: uppercase;
@@ -145,9 +127,7 @@
     overflow-x: hidden;
   }
 
-  .nav {
-    display: none;
-  }
+
 
   .header__h1 {
     font-size: 7rem;

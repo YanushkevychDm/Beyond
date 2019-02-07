@@ -1,0 +1,138 @@
+.nav {
+  position: absolute;
+  max-width: 100%;
+  // margin: 0 auto;
+  padding: 1.5rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15rem;
+  text-transform: uppercase;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  transition: display .5s;
+
+  &__logo {
+    width: 6.2rem;
+    height: 6.2rem;
+    color: $color-light1;
+    background-color: $color-peach;
+    font-size: 4.4rem;
+    line-height: 6.2rem;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+    margin-left: 1.5rem;
+  }
+
+  &__ul {
+    width: 97rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    color: $color-light1;
+    font-weight: 500;
+    transition: display .5s;
+  }
+
+  &__a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+}
+
+//  button
+
+
+// sticky navbar
+
+.nav__btn {
+  width: 6.2rem;
+  height: 6.2rem;
+
+  cursor: pointer;
+  // background-color: green;
+  margin-right: 1.5rem;
+  display: none;
+  // align-self: flex-end;
+ 
+
+  & i {
+    line-height: 6.2rem;
+    font-size: 4rem;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1.35rem;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  
+
+  & a {
+    color: $color-peach;
+  }
+}
+
+.sticky-logo {
+  display: block;
+
+}
+
+// responsiveness
+
+.nav.nav-mob {
+  align-items: flex-start;
+}
+
+.sticky.nav.nav-mob {
+  align-items: flex-start;
+  width: 100%;
+}
+
+.sticky .nav__ul.nav__ul-mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: $color-light1;
+  font-weight: 500;
+}
+
+.sticky .nav__ul.nav__ul-mob .nav__li{
+  margin: 1.2rem 0;
+}
+
+@media screen and (max-width: 999px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav__ul {
+    display: none;
+  }
+
+  .sticky .nav__btn {
+   
+    display: block;
+  
+  }
+
+
+
+}

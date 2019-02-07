@@ -48,7 +48,7 @@
   // margin: 0 auto;
 
 
-  .card5__img {
+  &__img {
     width: 25.4rem;
     height: 25.4rem;
     border-radius: 50%;
@@ -56,6 +56,22 @@
     margin-right: 3rem;
     border: 1rem solid $bg-dark2;
   }
+
+  &__img1 {
+    background: url(/img/min/face1.jpg);
+    background-size: cover;
+  }
+
+  &__img2 {
+    background: url(/img/min/face2.jpg);
+    background-size: cover;
+  }
+
+  &__img2 {
+    background: url(/img/min/realtor-2.jpeg);
+    background-size: cover;
+  }
+
 
   .card5-body {
     max-width: 67rem;

@@ -120,6 +120,101 @@ html, body {
     color: #fff;
     border: none; }
 
+.nav {
+  position: absolute;
+  max-width: 100%;
+  padding: 1.5rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15rem;
+  text-transform: uppercase;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  transition: display .5s; }
+  .nav__logo {
+    width: 6.2rem;
+    height: 6.2rem;
+    color: #fff;
+    background-color: #e76a54;
+    font-size: 4.4rem;
+    line-height: 6.2rem;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+    margin-left: 1.5rem; }
+  .nav__ul {
+    width: 97rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    transition: display .5s; }
+  .nav__a {
+    text-decoration: none;
+    color: inherit; }
+
+.nav__btn {
+  width: 6.2rem;
+  height: 6.2rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  display: none; }
+  .nav__btn i {
+    line-height: 6.2rem;
+    font-size: 4rem;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1.35rem; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; }
+  .sticky a {
+    color: #e76a54; }
+
+.sticky-logo {
+  display: block; }
+
+.nav.nav-mob {
+  align-items: flex-start; }
+
+.sticky.nav.nav-mob {
+  align-items: flex-start;
+  width: 100%; }
+
+.sticky .nav__ul.nav__ul-mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500; }
+
+.sticky .nav__ul.nav__ul-mob .nav__li {
+  margin: 1.2rem 0; }
+
+@media screen and (max-width: 999px) {
+  .nav {
+    justify-content: space-between; }
+  .nav__ul {
+    display: none; }
+  .sticky .nav__btn {
+    display: block; } }
+
 .header {
   background-color: #ffad2a;
   background-image: -moz-linear-gradient(-50deg, #ffad2a 0%, #f6923c 30.249%, #eb6d54 60.498%, #e35764 100%);
@@ -143,7 +238,7 @@ html, body {
   .logo__text {
     width: 9.6rem;
     height: 9.6rem;
-    margin: 0 auto 7rem;
+    margin: 0 auto;
     background-color: #fff;
     font-size: 4.4rem;
     color: #111111;
@@ -161,27 +256,9 @@ html, body {
     background-color: transparent;
     box-shadow: -5px -4px 4px rgba(0, 0, 0, 0.2); }
 
-.nav {
-  max-width: 970px;
-  margin: 0 auto 14.5rem;
-  text-transform: uppercase; }
-  .nav__ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 1.6rem;
-    color: #fff; }
-  .nav__a {
-    text-decoration: none;
-    color: inherit; }
-
 .hero {
   width: 57rem;
-  margin: 0 auto;
-  margin-bottom: 5.5rem;
+  margin: 22.8rem auto 5.5rem;
   color: #fff;
   text-align: center;
   text-transform: uppercase; }
@@ -230,8 +307,6 @@ html, body {
 @media only screen and (max-width: 1000px) {
   body {
     overflow-x: hidden; }
-  .nav {
-    display: none; }
   .header__h1 {
     font-size: 7rem;
     line-height: 7rem; }
@@ -304,10 +379,9 @@ html, body {
   right: -25.6rem;
   top: -15rem;
   width: 62.8rem;
-  height: 62.1rem; }
-  .parallax-big__img {
-    width: 100%;
-    height: 100%; }
+  height: 62.1rem;
+  background: url(/img/min/parallax-big.jpg);
+  background-size: cover; }
 
 .parallax-small {
   position: absolute;
@@ -422,6 +496,22 @@ html, body {
   width: 25.6rem;
   height: 22.2rem; }
 
+.card2__img1 {
+  background: url(/img/min/realtor-1.jpeg);
+  background-size: cover; }
+
+.card2__img2 {
+  background: url(/img/min/realtor-2.jpeg);
+  background-size: cover; }
+
+.card2__img3 {
+  background: url(/img/min/realtor-3.jpeg);
+  background-size: cover; }
+
+.card2__img4 {
+  background: url(/img/min/face2.jpg);
+  background-size: cover; }
+
 .card2__body {
   background-color: #e76a54;
   padding: 1.6rem 1.8rem; }
@@ -495,13 +585,37 @@ html, body {
   align-content: space-between; }
   .frame__photo {
     margin-top: 3.5rem;
-    background-color: grey; }
+    background-color: grey;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .frame__photo-2, .frame__photo-3, .frame__photo-4, .frame__photo-5, .frame__photo-7 {
     width: 37rem;
     height: 39rem; }
   .frame__photo-1, .frame__photo-6 {
     width: 37rem;
     height: 65rem; }
+  .frame__photo-1 {
+    background: url(/img/min/cake6.jpg);
+    background-size: cover; }
+  .frame__photo-2 {
+    background: url(/img/min/cake1.jpg);
+    background-size: cover; }
+  .frame__photo-3 {
+    background: url(/img/min/cake2.jpg);
+    background-size: cover; }
+  .frame__photo-4 {
+    background: url(/img/min/cake3.jpg);
+    background-size: cover; }
+  .frame__photo-5 {
+    background: url(/img/min/cake4.jpg);
+    background-size: cover; }
+  .frame__photo-6 {
+    background: url(/img/min/cake7.jpg);
+    background-size: cover; }
+  .frame__photo-7 {
+    background: url(/img/min/cake5.jpg);
+    background-size: cover; }
 
 @media only screen and (max-width: 1170px) {
   .frame {
@@ -609,7 +723,7 @@ html, body {
     font-size: 50px;
     line-height: 1;
     opacity: .75;
-    color: #181818;
+    color: #e76a54;
     background-color: transparent; }
   .multiple-items .slick-prev::before {
     content: "<i class=" fas fa-chevron-left "></i>"; }
@@ -764,13 +878,22 @@ html, body {
   max-width: 97rem;
   display: flex;
   align-items: center; }
-  .card5 .card5__img {
+  .card5__img {
     width: 25.4rem;
     height: 25.4rem;
     border-radius: 50%;
     background-color: grey;
     margin-right: 3rem;
     border: 1rem solid #181818; }
+  .card5__img1 {
+    background: url(/img/min/face1.jpg);
+    background-size: cover; }
+  .card5__img2 {
+    background: url(/img/min/face2.jpg);
+    background-size: cover; }
+  .card5__img2 {
+    background: url(/img/min/realtor-2.jpeg);
+    background-size: cover; }
   .card5 .card5-body {
     max-width: 67rem; }
     .card5 .card5-body__head {
@@ -821,8 +944,9 @@ html, body {
   .connect-us__img {
     width: 60rem;
     height: 38.2rem;
-    background-color: grey;
-    border: 4px solid #fff; }
+    border: 4px solid #fff;
+    background: url(/img/min/connect.jpg);
+    background-size: cover; }
   .connect-us__form {
     padding: 4.5rem 4rem;
     background-color: #fff;

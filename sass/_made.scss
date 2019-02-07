@@ -18,6 +18,9 @@
   &__photo {
     margin-top: 3.5rem;
     background-color: grey;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__photo-2,
@@ -36,7 +39,40 @@
     height: 65rem;
   }
 
+  &__photo-1 {
+    background: url(/img/min/cake6.jpg);
+    background-size: cover;
+  }
 
+  &__photo-2 {
+    background: url(/img/min/cake1.jpg);
+    background-size: cover;
+  }
+
+  &__photo-3 {
+    background: url(/img/min/cake2.jpg);
+    background-size: cover;
+  }
+
+  &__photo-4 {
+    background: url(/img/min/cake3.jpg);
+    background-size: cover;
+  }
+
+  &__photo-5 {
+    background: url(/img/min/cake4.jpg);
+    background-size: cover;
+  }
+
+  &__photo-6 {
+    background: url(/img/min/cake7.jpg);
+    background-size: cover;
+  }
+
+  &__photo-7 {
+    background: url(/img/min/cake5.jpg);
+    background-size: cover;
+  }
 }
 
 
@@ -53,7 +89,6 @@
     flex-wrap: wrap;
     margin: 0 auto;
   
-
     &__photo-2,
     &__photo-3,
     &__photo-4,
@@ -69,6 +104,9 @@
       width: 18rem;
       height: 33rem;
     }
+
+
+
   }
 }
 
@@ -93,5 +131,6 @@
     }
   }
 }
+
 
 
