@@ -75,6 +75,9 @@ html, body {
     .title__body--light {
       color: #181818; }
 
+.none {
+  display: none; }
+
 .mt-3 {
   padding-bottom: 11.2rem; }
 
