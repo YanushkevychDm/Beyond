@@ -277,7 +277,8 @@ html, body {
   list-style: none;
   position: absolute;
   right: 30px;
-  top: 44.6rem; }
+  top: 44.6rem;
+  display: none; }
   .dots__li {
     width: 17px;
     height: 17px;
