@@ -384,7 +384,7 @@ html, body {
   top: -15rem;
   width: 62.8rem;
   height: 62.1rem;
-  background: url(/img/min/parallax-big.jpg);
+  background: url(../img/min/parallax-big.jpg);
   background-size: cover; }
 
 .parallax-small {
@@ -442,10 +442,13 @@ html, body {
 
 .card-1 {
   display: flex; }
-  .card-1__img {
+  .card-1__img svg {
     color: #fff;
     font-size: 50px;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    fill: #fff;
+    height: 7rem;
+    width: 7rem; }
   .card-1__body {
     display: flex;
     flex-direction: column;
@@ -501,19 +504,19 @@ html, body {
   height: 22.2rem; }
 
 .card2__img1 {
-  background: url(/img/min/realtor-1.jpeg);
+  background: url(../img/min/realtor-1.jpeg);
   background-size: cover; }
 
 .card2__img2 {
-  background: url(/img/min/realtor-2.jpeg);
+  background: url(../img/min/realtor-2.jpeg);
   background-size: cover; }
 
 .card2__img3 {
-  background: url(/img/min/realtor-3.jpeg);
+  background: url(../img/min/realtor-3.jpeg);
   background-size: cover; }
 
 .card2__img4 {
-  background: url(/img/min/face2.jpg);
+  background: url(../img/min/face2.jpg);
   background-size: cover; }
 
 .card2__body {
@@ -600,25 +603,25 @@ html, body {
     width: 37rem;
     height: 65rem; }
   .frame__photo-1 {
-    background: url(/img/min/cake6.jpg);
+    background: url(../img/min/cake6.jpg);
     background-size: cover; }
   .frame__photo-2 {
-    background: url(/img/min/cake1.jpg);
+    background: url(../img/min/cake1.jpg);
     background-size: cover; }
   .frame__photo-3 {
-    background: url(/img/min/cake2.jpg);
+    background: url(../img/min/cake2.jpg);
     background-size: cover; }
   .frame__photo-4 {
-    background: url(/img/min/cake3.jpg);
+    background: url(../img/min/cake3.jpg);
     background-size: cover; }
   .frame__photo-5 {
-    background: url(/img/min/cake4.jpg);
+    background: url(../img/min/cake4.jpg);
     background-size: cover; }
   .frame__photo-6 {
-    background: url(/img/min/cake7.jpg);
+    background: url(../img/min/cake7.jpg);
     background-size: cover; }
   .frame__photo-7 {
-    background: url(/img/min/cake5.jpg);
+    background: url(../img/min/cake5.jpg);
     background-size: cover; }
 
 @media only screen and (max-width: 1170px) {
@@ -764,7 +767,11 @@ html, body {
   .card3__img {
     font-size: 7rem;
     line-height: 7rem;
-    margin-bottom: 6rem; }
+    margin-bottom: 5rem; }
+    .card3__img svg {
+      width: 8rem;
+      height: 8rem;
+      fill: #fff; }
   .card3__num {
     font-size: 4.4rem;
     line-height: 4.4rem;
@@ -890,13 +897,13 @@ html, body {
     margin-right: 3rem;
     border: 1rem solid #181818; }
   .card5__img1 {
-    background: url(/img/min/face1.jpg);
+    background: url(../img/min/face1.jpg);
     background-size: cover; }
   .card5__img2 {
-    background: url(/img/min/face2.jpg);
+    background: url(../img/min/face2.jpg);
     background-size: cover; }
   .card5__img3 {
-    background: url(/img/min/realtor-2.jpeg);
+    background: url(../img/min/realtor-2.jpeg);
     background-size: cover; }
   .card5 .card5-body {
     max-width: 67rem; }
@@ -949,7 +956,7 @@ html, body {
     width: 60rem;
     height: 38.2rem;
     border: 4px solid #fff;
-    background: url(/img/min/connect.jpg);
+    background: url(../img/min/connect.jpg);
     background-size: cover; }
   .connect-us__form {
     padding: 4.5rem 4rem;

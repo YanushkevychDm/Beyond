@@ -17,10 +17,13 @@
 .card-1 {
   display: flex;
 
-  &__img {
+  &__img svg{
     color: $color-light1;
     font-size: 50px;
     margin-right: 3rem;
+    fill: #fff;
+    height: 7rem;
+    width: 7rem;
   }
 
   &__body {

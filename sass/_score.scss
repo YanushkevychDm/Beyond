@@ -27,7 +27,13 @@
   &__img {
     font-size: 7rem;
     line-height: 7rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
+
+    & svg {
+      width: 8rem;
+      height: 8rem;
+      fill: #fff;
+    }
   }
   
   &__num {
